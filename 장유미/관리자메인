@@ -1,0 +1,865 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+
+<!doctype html>
+<html lang="en">
+<head>
+<!— Required meta tags —>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!— Bootstrap CSS —>
+
+<title>Hello, world!</title>
+
+<style type="text/css">
+
+</style>
+
+</head>
+<body>
+
+		<div class="container bottom">
+			<span class="text-muted">
+				<a class="btn btn-sm btn-outline-light my-auto" href="#" role="button">Go TOP</a>
+			</span>
+		</div>
+
+</body>
+</html>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+
+<!doctype html>
+<html lang="en">
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!-- Bootstrap CSS -->
+
+<title>Hello, world!</title>
+
+<style type="text/css">
+.jumbotron {
+	background: white;
+}
+
+.carousel {
+	height: 100%;
+}
+
+.carousel-inner, .carousel-caption, .carousel-item, .caption {
+	height: 100%;
+}
+
+.carousel-inner, .carousel-caption, .carousel-item, .caption,
+	.carousel-indicators {
+	background: #FF8A80;
+}
+
+.carousel-caption {
+	padding-top: 10%;
+}
+</style>
+
+</head>
+<body>
+
+	<!-- Main jumbotron for a primary marketing message or call to action -->
+	<div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+		
+		<div class="carousel-inner">
+			
+				<svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
+						<rect width="100%" height="100%" fill="#FF8A80"></rect></svg>
+				<div class="container caption">
+					<div class="carousel-caption text-left">
+						<h1>관리자 메인 화면</h1>
+						<p>관리자용(DB)</p>
+						<p>
+							<a class="btn btn-lg btn-outline-light" href="#" role="button">내역 확인하기</a>
+						</p>
+					</div>
+				</div>
+			</div>
+			
+		
+	</div>
+
+	<hr>
+
+	<div class="container">
+		<!-- Example row of columns -->
+		<div class="row">
+			<div class="col-md-3">
+				<h2>개인정보 수정</h2>
+				<p>수정</p>
+				<p>
+					<a class="btn btn-sm btn-outline-dark" href="#" role="button">View details »</a>
+				</p>
+			</div>
+			<div class="col-md-3">
+				<h2>주문내역</h2>
+				<p>내역</p>
+				<p>
+					<a class="btn btn-sm btn-outline-dark" href="#" role="button">View details »</a>
+				</p>
+			</div>
+			<div class="col-md-3">
+				<h2>장바구니</h2>
+				<p>장바구니</p>
+				<p>
+					<a class="btn btn-sm btn-outline-dark" href="#" role="button">View details »</a>
+				</p>
+			</div>
+			<div class="col-md-3">
+				<h2>최근 본 상품</h2>
+				<p>상품</p>
+				<p>
+					<a class="btn btn-sm btn-outline-dark" href="#" role="button">View details »</a>
+				</p>
+			</div>
+		</div>
+
+	</div>
+
+	<!— /container —>
+
+</body>
+</html>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+
+<!doctype html>
+<html lang="en">
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+<title>Main</title>
+
+<style type="text/css">
+body {
+	height: 100%;
+}
+
+header, main, footer {
+	display: block;
+}
+
+header {
+	color: white;
+	z-index: 20;
+}
+
+main {
+	height: 500px;
+	z-index: 10;
+}
+
+#bottom {
+	bottom: 0;
+}
+
+.footer {
+	position: fixed;
+	width: 100%;
+	height: 50px;
+	background-color: #FF8A80;
+}
+
+*, ::after, ::before {
+	box-sizing: border-box;
+}
+
+.loading {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	background: #fff;
+	z-index: 9999; /* 이 값으로 레이어의 위치를 조정합니다. */
+}
+</style>
+
+
+
+</head>
+<body>
+
+
+
+
+	<div class="loading"></div>
+
+	<header id="top">
+		<jsp:include page="topBar.jsp"></jsp:include>
+	</header>
+
+	<main role="main" id="center">
+		<jsp:include page="center.jsp"></jsp:include>
+	</main>
+
+	<footer id="bottom" class="footer text-center mt-3 py-2">
+		<jsp:include page="bottom.jsp"></jsp:include>
+	</footer>
+
+	<!— Optional JavaScript —>
+	<!— jQuery first, then Popper.js, then Bootstrap JS —>
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+	<script type="text/javascript">
+		$(window).on('load', function() {
+			$(".loading").fadeOut(500);
+		});
+	</script>
+
+</body>
+</html>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+
+<!doctype html>
+<html lang="en">
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!-- Bootstrap CSS -->
+<title>topBar</title>
+
+<script type="text/javascript">
+
+	
+	
+</script>
+
+<style type="text/css">
+</style>
+
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background: #FF8A80;: white;">
+		<a class="navbar-brand" href="#">
+			<h1>Green Tea</h1>
+		</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item active">
+					<a class="nav-link" href="#">
+						Home
+						<span class="sr-only">(current)</span>
+					</a>
+				</li>
+				<li class="nav-item active">
+					<a class="nav-link" href="#">Link</a>
+				</li>
+				
+				<!-- ------------------------------------------- dropdown ------------------------------------------------ -->
+				
+				<li class="nav-item dropdown active">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Dropdown </a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<a class="dropdown-item" href="#">로그인</a>
+						<div class="dropdown-divider"></div>
+						<a class="dropdown-item" href="#">회원가입</a>
+					</div>
+				</li>
+				
+				<!-- ------------------------------------------ /dropdown ------------------------------------------------ -->
+				
+				<li class="nav-item">
+					<a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+				</li>
+			</ul>
+			
+			<!-- ------------------------------------------- search ------------------------------------------------ -->
+			
+			<form class="form-inline my-2 my-lg-0">
+				<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"  style="width: 300px;">
+				<button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Search</button>
+			</form>
+			
+			<!-- ------------------------------------------ /search ------------------------------------------------ -->
+			
+			<ul class="navbar-nav px-5">
+				<li class="nav-item dropdown active">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 메뉴 </a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<a class="dropdown-item" href="#">로그인</a>
+						<div class="dropdown-divider"></div>
+						<a class="dropdown-item" href="#">회원가입</a>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+</body>
+</html>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+
+<!doctype html>
+<html lang="en">
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+<title>test</title>
+
+<style type="text/css">
+body {
+	height: 100%;
+}
+
+header, main, footer {
+	display: block;
+}
+
+header {
+	color: white;
+	z-index: 20;
+}
+
+main {
+	height: 500px;
+	z-index: 10;
+}
+
+#bottom {
+	bottom: 0;
+}
+
+.footer {
+	position: fixed;
+	width: 100%;
+	height: 50px;
+	background-color: #96DFD8;
+}
+
+*, ::after, ::before {
+	box-sizing: border-box;
+}
+
+.loading {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	background: #fff;
+	z-index: 9999; /* 이 값으로 레이어의 위치를 조정합니다. */
+}
+
+
+#box {
+            
+            
+            margin:00px 100px 100px 400px; /* 위쪽 오른쪽 아래쪽 왼쪽 마진속성 한번에 주기 */
+            padding:10px 10px 10px 10px;
+        }
+</style>
+
+
+
+</head>
+<body>
+
+   <%
+
+      //로긴한사람이라면    userID라는 변수에 해당 아이디가 담기고 그렇지 않으면 null값
+
+      String userID = null;
+
+      if (session.getAttribute("userID") != null) {
+
+         userID = (String) session.getAttribute("userID");
+
+
+
+
+      }
+
+   %>
+
+
+
+
+
+
+
+   <!-- 네비게이션  -->
+
+   <nav class="navbar navbar-default">
+
+      <div class="navbar-header">
+
+         <button type="button" class="navbar-toggle collapsed"
+
+            data-toggle="collapse" data-target="bs-example-navbar-collapse-1"
+
+            aria-expaned="false">
+
+            <span class="icon-bar"></span> <span class="icon-bar"></span> <span
+
+               class="icon-bar"></span>
+
+         </button>
+
+         <a class="navbar-brand" href="main.jsp">JSP 게시판</a>
+
+      </div>
+
+      <div class="collapse navbar-collapse"
+
+         id="#bs-example-navbar-collapse-1">
+
+         <ul class="nav navbar-nav">
+
+            <li><a href="main.jsp">메인</a></li>
+
+            <li class="active"><a href="bbs.jsp">게시판</a></li>
+
+         </ul>
+
+
+
+
+
+
+
+         <%
+
+            //라긴안된경우
+
+            if (userID == null) {
+
+         %>
+
+         <ul class="nav navbar-nav navbar-right">
+
+            <li class="dropdown"><a href="#" class="dropdown-toggle"
+
+               data-toggle="dropdown" role="button" aria-haspopup="true"
+
+
+
+
+
+               aria-expanded="false">접속하기<span class="caret"></span></a>
+
+               <ul class="dropdown-menu">
+
+                  <li><a href="login.jsp">로그인</a></li>
+
+                  <li><a href="join.jsp">회원가입</a></li>
+
+               </ul></li>
+
+         </ul>
+
+         <%
+
+            } else {
+
+         %>
+
+         <ul class="nav navbar-nav navbar-right">
+
+            <li class="dropdown"><a href="#" class="dropdown-toggle"
+
+               data-toggle="dropdown" role="button" aria-haspopup="true"
+
+
+
+
+
+               aria-expanded="false">회원관리<span class="caret"></span></a>
+
+               <ul class="dropdown-menu">
+
+                  <li><a href="logoutAction.jsp">로그아웃</a></li>
+
+               </ul></li>
+
+         </ul>
+
+         <%
+
+            }
+
+         %>
+
+      </div>
+
+   </nav>
+
+   <!-- 게시판 -->
+
+   <div id = "box" class="container" >
+	
+      <div class="row">
+
+         <form method="post" action="writeAction.jsp">
+
+            <table class="table table-striped"
+
+               style="text-align: center; border: 1px solid #dddddd">
+
+               <thead>
+
+                  <tr>
+					&nbsp
+                     <th colspan="2"
+
+                        style="background-color: #eeeeee; text-align: center;  ">게시판
+
+                        글쓰기 양식</th>
+
+                  </tr>
+
+               </thead>
+
+               <tbody>
+
+                  <tr>
+
+                     <td><input type="text" class="form-control" placeholder="글 제목" name="bbsTitle" maxlength="50"/></td>
+
+                  </tr>
+
+                  <tr>
+
+                     <td><textarea class="form-control" placeholder="글 내용" name="bbsContent" maxlength="2048" style="height: 350px;"></textarea></td>
+
+                  </tr>
+
+               </tbody>
+
+            </table>   
+
+            <input type="submit" class="btn btn-primary pull-right" value="글쓰기" />
+
+         </form>
+
+      </div>
+
+   </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <!-- 애니매이션 담당 JQUERY -->
+
+   <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+   <!-- 부트스트랩 JS  -->
+
+   <script src="js/bootstrap.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+	<div class="loading"></div>
+
+	<header id="top">
+		<jsp:include page="topBar.jsp"></jsp:include>
+	</header>
+
+	<main role="main" id="center">
+		<jsp:include page="boardtest.jsp"></jsp:include>
+	</main>
+
+	<footer id="bottom" class="footer text-center mt-3 py-2">
+		<jsp:include page="bottom.jsp"></jsp:include>
+	</footer>
+
+	<!— Optional JavaScript —>
+	<!— jQuery first, then Popper.js, then Bootstrap JS —>
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+	<script type="text/javascript">
+		$(window).on('load', function() {
+			$(".loading").fadeOut(500);
+		});
+	</script>
+
+</body>
+</html>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+
+<!doctype html>
+<html lang="en">
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+<title>test</title>
+ &nbsp
+<h2>리뷰</h2>
+ &nbsp
+  &nbsp
+<style type="text/css">
+body {
+	height: 100%;
+}
+
+header, main, footer {
+	display: block;
+}
+
+header {
+	color: white;
+	z-index: 20;
+}
+
+main {
+	height: 500px;
+	z-index: 10;
+}
+
+#bottom {
+	bottom: 0;
+}
+
+.footer {
+	position: fixed;
+	width: 100%;
+	height: 50px;
+	background-color: #96DFD8;
+}
+
+*, ::after, ::before {
+	box-sizing: border-box;
+}
+
+.loading {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	background: #fff;
+	z-index: 9999; /* 이 값으로 레이어의 위치를 조정합니다. */
+}
+</style>
+
+
+
+</head>
+<body>
+
+<body>
+ <h2>리뷰</h2>
+ &nbsp
+ &nbsp
+
+<table class="table">
+   <thead>
+   <tr>
+      <th>번호</th>
+      <th>제목</th>
+      <th>작성자</th>
+      <th>날짜</th>
+      <th>조회수</th>
+   </tr>
+   </thead>
+   
+   <tbody>
+   <tr>
+      <td>1</td>
+      <td>립스틱</td>
+      <td>이**</td>
+      <td>2020.06.10</td>
+      <td>100</td>
+      </tr>
+      
+      <tr>
+      <td>2</td>
+      <td>아이라이너</td>
+      <td>정**</td>
+      <td>2020.06.10</td>
+      <td>100</td>
+      </tr>
+      
+      
+   </tbody>
+</table>
+<hr/>
+
+<form method = "post" name="writeform"
+action= "bbss.jsp" onsubmit="return writeSave()">
+<div class="text-center">
+   
+   <div class="container mt-5">
+  <div class="row justify-content-center">
+  <div class="col-4">
+    
+    
+    <form>
+      <button type="submit"  class="btn btn-warning btn-lg btn-block">글쓰기</button>
+    </form>
+    
+    
+      </div>
+
+  
+</div>
+</div>
+</div>
+</form>
+<script src="jquery/jquery-3.1.1.js"></script>
+<script src="js/bootstrap.js"></script>
+
+
+
+
+	<div class="loading"></div>
+
+	<header id="top">
+		<jsp:include page="topBar.jsp"></jsp:include>
+	</header>
+
+	<main role="main" id="center">
+		<jsp:include page="boardtest.jsp"></jsp:include>
+	</main>
+
+	<footer id="bottom" class="footer text-center mt-3 py-2">
+		<jsp:include page="bottom.jsp"></jsp:include>
+	</footer>
+
+	<!— Optional JavaScript —>
+	<!— jQuery first, then Popper.js, then Bootstrap JS —>
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+	<script type="text/javascript">
+		$(window).on('load', function() {
+			$(".loading").fadeOut(500);
+		});
+	</script>
+
+</body>
+</html>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+
+<!doctype html>
+<html lang="en">
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!-- Bootstrap CSS -->
+
+<title>Hello, world!</title>
+
+<style type="text/css">
+.jumbotron {
+	background: white;
+}
+
+.carousel {
+	height: 100%;
+}
+
+.carousel-inner, .carousel-caption, .carousel-item, .caption {
+	height: 100%;
+}
+
+.carousel-inner, .carousel-caption, .carousel-item, .caption,
+	.carousel-indicators {
+	background: #FF8A80;
+}
+
+.carousel-caption {
+	padding-top: 10%;
+}
+</style>
+
+</head>
+<body>
+
+	<!-- Main jumbotron for a primary marketing message or call to action -->
+	<div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+		
+		
+
+	<hr>
+
+	<div class="container">
+		<!-- Example row of columns -->
+		<div class="row">
+			<div class="col-md-3">
+				<h2>개인정보 수정</h2>
+				<p>수정</p>
+				<p>
+					<a class="btn btn-sm btn-outline-dark" href="#" role="button">View details »</a>
+				</p>
+			</div>
+			<div class="col-md-3">
+				<h2>주문내역</h2>
+				<p>내역</p>
+				<p>
+					<a class="btn btn-sm btn-outline-dark" href="#" role="button">View details »</a>
+				</p>
+			</div>
+			<div class="col-md-3">
+				<h2>장바구니</h2>
+				<p>장바구니</p>
+				<p>
+					<a class="btn btn-sm btn-outline-dark" href="#" role="button">View details »</a>
+				</p>
+			</div>
+			<div class="col-md-3">
+				<h2>최근 본 상품</h2>
+				<p>상품</p>
+				<p>
+					<a class="btn btn-sm btn-outline-dark" href="#" role="button">View details »</a>
+				</p>
+			</div>
+		</div>
+
+	</div>
+
+	<!— /container —>
+
+</body>
+</html>
